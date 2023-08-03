@@ -106,6 +106,7 @@ coverage
 ############################
 
 .env
+.vercel
 license.txt
 exports
 *.cache
