@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "table_reservations",
+  "info": {
+    "singularName": "table-reservation",
+    "pluralName": "table-reservations",
+    "displayName": "TableReservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SeatId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::seat.seat"
+    },
+    "table": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::table.table"
+    },
+    "StartDate": {
+      "type": "datetime"
+    },
+    "EndDate": {
+      "type": "datetime"
+    },
+    "UserId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
